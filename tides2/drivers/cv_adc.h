@@ -31,7 +31,7 @@
 
 #include "stmlib/stmlib.h"
 
-namespace tides {
+namespace tides2 {
 
 enum CvAdcChannel {
   CV_ADC_CHANNEL_V_OCT,
@@ -67,6 +67,6 @@ class CvAdc {
   DISALLOW_COPY_AND_ASSIGN(CvAdc);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_CV_ADC_H_

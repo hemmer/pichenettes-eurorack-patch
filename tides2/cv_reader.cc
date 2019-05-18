@@ -32,7 +32,7 @@
 
 #include "stmlib/dsp/dsp.h"
 
-namespace tides {
+namespace tides2 {
   
 using namespace std;
 using namespace stmlib;
@@ -132,4 +132,4 @@ void CvReader::Read(IOBuffer::Block* block) {
   pots_adc_.Convert();
 }
 
-}  // namespace tides
+}  // namespace tides2

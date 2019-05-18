@@ -33,7 +33,7 @@
 
 #include "stmlib/system/storage.h"
 
-namespace tides {
+namespace tides2 {
 
 using namespace std;
 
@@ -102,4 +102,4 @@ void Settings::SaveState() {
   chunk_storage_.SaveState();
 }
 
-}  // namespace tides
+}  // namespace tides2

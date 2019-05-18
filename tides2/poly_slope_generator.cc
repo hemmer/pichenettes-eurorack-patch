@@ -28,7 +28,7 @@
 
 #include "tides2/poly_slope_generator.h"
 
-namespace tides {
+namespace tides2 {
   
 /* static */
 Ratio PolySlopeGenerator::audio_ratio_table_[21][PolySlopeGenerator::num_channels] = {
@@ -89,4 +89,4 @@ PolySlopeGenerator::RenderFn PolySlopeGenerator::render_fn_table_[RAMP_MODE_LAST
     OUTPUT_MODE_LAST][RANGE_LAST];
 
 
-}  // namespace tides
+}  // namespace tides2

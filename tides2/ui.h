@@ -38,7 +38,7 @@
 
 #include "tides2/settings.h"
 
-namespace tides {
+namespace tides2 {
 
 enum UiMode {
   UI_MODE_NORMAL,
@@ -86,6 +86,6 @@ class Ui {
   DISALLOW_COPY_AND_ASSIGN(Ui);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_UI_H_

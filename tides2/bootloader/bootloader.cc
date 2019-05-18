@@ -51,7 +51,7 @@ void PendSV_Handler() { }
 
 }
 
-using namespace tides;
+using namespace tides2;
 using namespace stmlib;
 using namespace std;
 using namespace stm_audio_bootloader;

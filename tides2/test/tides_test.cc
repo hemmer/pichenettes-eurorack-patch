@@ -30,7 +30,7 @@
 
 using namespace std;
 using namespace stmlib;
-using namespace tides;
+using namespace tides2;
 
 const size_t kBlockSize = 6;
 const float kSampleRate = 48000.0f;

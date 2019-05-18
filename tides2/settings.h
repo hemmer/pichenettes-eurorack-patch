@@ -34,7 +34,7 @@
 
 #include "tides2/io_buffer.h"
 
-namespace tides {
+namespace tides2 {
 
 struct DacCalibrationData {
   float scale;
@@ -115,6 +115,6 @@ class Settings {
   DISALLOW_COPY_AND_ASSIGN(Settings);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_SETTINGS_H_

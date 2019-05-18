@@ -33,7 +33,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 class DebugPort {
  public:
@@ -62,6 +62,6 @@ class DebugPort {
   DISALLOW_COPY_AND_ASSIGN(DebugPort);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_DEBUG_PORT_H_

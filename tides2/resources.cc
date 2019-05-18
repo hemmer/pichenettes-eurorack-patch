@@ -32,7 +32,7 @@
 
 #include "tides2/resources.h"
 
-namespace tides {
+namespace tides2 {
 
 const float lut_sine[] = {
    0.000000000e+00,  6.135884649e-03,  1.227153829e-02,  1.840672991e-02,
@@ -3967,4 +3967,4 @@ const int16_t* lookup_table_i16_table[] = {
 };
 
 
-}  // namespace tides
+}  // namespace tides2

@@ -33,7 +33,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 enum Switch {
   SWITCH_RANGE,
@@ -76,6 +76,6 @@ class Switches {
   DISALLOW_COPY_AND_ASSIGN(Switches);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_SWITCHES_H_

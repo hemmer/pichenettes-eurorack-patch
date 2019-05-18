@@ -38,7 +38,7 @@
 
 #include "tides2/ratio.h"
 
-namespace tides {
+namespace tides2 {
   
 enum RampMode {
   RAMP_MODE_AD,
@@ -234,6 +234,6 @@ class RampGenerator {
   DISALLOW_COPY_AND_ASSIGN(RampGenerator);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_RAMP_GENERATOR_H_

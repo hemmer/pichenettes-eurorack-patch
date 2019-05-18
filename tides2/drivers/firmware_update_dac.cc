@@ -29,7 +29,7 @@
 
 #include "tides2/drivers/firmware_update_dac.h"
 
-namespace tides {
+namespace tides2 {
 
 /* static */
 FirmwareUpdateDac* FirmwareUpdateDac::instance_;
@@ -93,7 +93,7 @@ void FirmwareUpdateDac::Init(int sample_rate) {
   NVIC_Init(&timer_interrupt);
 }
 
-}  // namespace tides
+}  // namespace tides2
 
 extern "C" {
 

@@ -34,7 +34,7 @@
 
 #include <algorithm>
 
-namespace tides {
+namespace tides2 {
 
 const size_t kNumBlocks = 2;
 const size_t kBlockSize = 8;
@@ -114,6 +114,6 @@ class IOBuffer {
   DISALLOW_COPY_AND_ASSIGN(IOBuffer);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_IO_BUFFER_H_

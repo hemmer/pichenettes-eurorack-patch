@@ -39,7 +39,7 @@ using namespace stmlib;
 
 const int32_t kLongPressDuration = 1200;
 
-namespace tides {
+namespace tides2 {
 
 /* static */
 const LedColor Ui::palette_[4] = {
@@ -182,4 +182,4 @@ void Ui::DoEvents() {
   }
 }
 
-}  // namespace tides
+}  // namespace tides2

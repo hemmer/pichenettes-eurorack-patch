@@ -32,7 +32,7 @@
 
 #include "stmlib/stmlib.h"
 
-namespace tides {
+namespace tides2 {
 
 class FirmwareUpdateAdc {
  public:
@@ -57,6 +57,6 @@ class FirmwareUpdateAdc {
   DISALLOW_COPY_AND_ASSIGN(FirmwareUpdateAdc);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_FIRMWARE_UPDATE_ADC_H_

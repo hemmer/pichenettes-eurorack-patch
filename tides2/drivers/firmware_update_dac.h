@@ -34,7 +34,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 class FirmwareUpdateDac {
  public:
@@ -86,6 +86,6 @@ class FirmwareUpdateDac {
 template<>
 inline void FirmwareUpdateDac::Wait<0>() { }
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_FIRMWARE_UPDATE_DAC_H_

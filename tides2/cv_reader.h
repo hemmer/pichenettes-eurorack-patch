@@ -36,7 +36,7 @@
 #include "tides2/cv_reader_channel.h"
 #include "tides2/settings.h"
 
-namespace tides {
+namespace tides2 {
 
 class CvReader {
  public:
@@ -77,6 +77,6 @@ class CvReader {
   DISALLOW_COPY_AND_ASSIGN(CvReader);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_CV_READER_H_

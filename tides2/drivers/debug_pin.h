@@ -33,7 +33,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 class DebugPin {
  public:
@@ -67,6 +67,6 @@ class DebugPin {
 #define TIC DebugPin::High();
 #define TOC DebugPin::Low();
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_DEBUG_PIN_H_

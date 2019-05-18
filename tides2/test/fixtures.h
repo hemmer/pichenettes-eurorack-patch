@@ -21,7 +21,7 @@
 
 #include "stmlib/utils/gate_flags.h"
 
-namespace tides {
+namespace tides2 {
 
 using namespace std;
 using namespace stmlib;
@@ -84,6 +84,6 @@ class PulseGenerator {
   DISALLOW_COPY_AND_ASSIGN(PulseGenerator);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_TEST_FIXTURES_H_

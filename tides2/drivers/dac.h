@@ -35,7 +35,7 @@
 
 #include "tides2/io_buffer.h"
 
-namespace tides {
+namespace tides2 {
 
 const size_t kMaxDacBlockSize = 4;
 
@@ -69,6 +69,6 @@ private:
   DISALLOW_COPY_AND_ASSIGN(Dac);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_DAC_H_

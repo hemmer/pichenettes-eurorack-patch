@@ -38,7 +38,7 @@
 
 
 
-namespace tides {
+namespace tides2 {
 
 typedef uint8_t ResourceId;
 
@@ -59,6 +59,6 @@ extern const int16_t lut_wavetable[];
 #define LUT_WAVETABLE 0
 #define LUT_WAVETABLE_SIZE 12300
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES2_RESOURCES_H_

@@ -31,7 +31,7 @@
 
 #include "stmlib/stmlib.h"
 
-namespace tides {
+namespace tides2 {
 
 class System {
  public:
@@ -45,6 +45,6 @@ class System {
   DISALLOW_COPY_AND_ASSIGN(System);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_SYSTEM_H_

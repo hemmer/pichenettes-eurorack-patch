@@ -31,7 +31,7 @@
 
 #include "stmlib/stmlib.h"
 
-namespace tides {
+namespace tides2 {
 
 enum Led {
   LED_RANGE,
@@ -66,6 +66,6 @@ class Leds {
   DISALLOW_COPY_AND_ASSIGN(Leds);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_DRIVERS_LEDS_H_

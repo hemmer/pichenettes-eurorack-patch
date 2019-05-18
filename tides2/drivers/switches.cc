@@ -30,7 +30,7 @@
 
 #include <algorithm>
 
-namespace tides {
+namespace tides2 {
 
 using namespace std;
 
@@ -71,4 +71,4 @@ void Switches::Debounce() {
   }
 }
 
-}  // namespace tides
+}  // namespace tides2

@@ -36,7 +36,7 @@
 
 #include "tides2/ramp_generator.h"
 
-namespace tides {
+namespace tides2 {
 
 class RampShaper {
  public:
@@ -249,6 +249,6 @@ class RampWaveshaper {
   DISALLOW_COPY_AND_ASSIGN(RampWaveshaper);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_RAMP_SHAPER_H_

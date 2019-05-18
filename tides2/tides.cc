@@ -43,7 +43,7 @@
 
 using namespace std;
 using namespace stmlib;
-using namespace tides;
+using namespace tides2;
 
 const bool skip_factory_test = false;
 const bool test_adc_noise = false;

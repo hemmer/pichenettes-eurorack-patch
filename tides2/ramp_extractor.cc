@@ -40,7 +40,7 @@
 
 #include "stmlib/dsp/dsp.h"
 
-namespace tides {
+namespace tides2 {
 
 using namespace std;
 using namespace stmlib;
@@ -256,4 +256,4 @@ inline float RampExtractor::ProcessInternal(
   return smooth_audio_rate_tracking ? frequency_ : frequency_ * f_ratio_;
 }
 
-}  // namespace tides
+}  // namespace tides2

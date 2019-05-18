@@ -30,7 +30,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 /* static */
 uint8_t PotsAdc::mux_address_to_channel_index_[8] = {
@@ -148,4 +148,4 @@ void PotsAdc::Convert() {
   conversion_done_ = !conversion_done_;
 }
 
-}  // namespace tides
+}  // namespace tides2

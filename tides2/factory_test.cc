@@ -39,7 +39,7 @@
 #include "tides2/settings.h"
 #include "tides2/ui.h"
 
-namespace tides {
+namespace tides2 {
   
 using namespace std;
 using namespace stmlib;
@@ -198,4 +198,4 @@ uint8_t FactoryTest::HandleRequest(uint8_t command) {
   return reply;
 }
 
-}  // namespace tides
+}  // namespace tides2

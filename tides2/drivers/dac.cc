@@ -30,7 +30,7 @@
 
 #include <algorithm>
 
-namespace tides {
+namespace tides2 {
 
 /* static */
 Dac* Dac::instance_;
@@ -124,7 +124,7 @@ void Dac::Fill(size_t offset) {
   }
 }
 
-}  // namespace tides
+}  // namespace tides2
 
 extern "C" {
 

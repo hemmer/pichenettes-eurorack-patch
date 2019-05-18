@@ -31,13 +31,13 @@
 
 #include "stmlib/stmlib.h"
 
-namespace tides {
+namespace tides2 {
 
 struct Ratio {
   float ratio;
   int q;
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_RATIO_H_

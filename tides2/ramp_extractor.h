@@ -42,7 +42,7 @@
 
 #include "tides2/ratio.h"
 
-namespace tides {
+namespace tides2 {
 
 const int kMaxPatternPeriod = 8;
 
@@ -110,6 +110,6 @@ class RampExtractor {
   DISALLOW_COPY_AND_ASSIGN(RampExtractor);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_RAMP_EXTRACTOR_H_

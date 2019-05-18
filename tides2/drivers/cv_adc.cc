@@ -30,7 +30,7 @@
 
 #include <stm32f37x_conf.h>
 
-namespace tides {
+namespace tides2 {
 
 struct ChannelConfiguration {
   int map_to;
@@ -186,4 +186,4 @@ void CvAdc::Convert() {
   SDADC3->CR2 |= (uint32_t)SDADC_CR2_JSWSTART;
 }
 
-}  // namespace tides
+}  // namespace tides2

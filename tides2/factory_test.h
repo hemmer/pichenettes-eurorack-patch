@@ -34,7 +34,7 @@
 #include "tides2/drivers/debug_port.h"
 #include "tides2/io_buffer.h"
 
-namespace tides {
+namespace tides2 {
 
 enum FactoryTestCommand {
   FACTORY_TEST_READ_POT,
@@ -101,6 +101,6 @@ class FactoryTest {
   DISALLOW_COPY_AND_ASSIGN(FactoryTest);
 };
 
-}  // namespace tides
+}  // namespace tides2
 
 #endif  // TIDES_FACTORY_TEST_H_
