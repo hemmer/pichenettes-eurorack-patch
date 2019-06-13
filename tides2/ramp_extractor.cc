@@ -221,7 +221,7 @@ inline float RampExtractor::ProcessInternal(
       ONE_POLE(frequency_lp_, target_frequency_, lp_coefficient_);
       if (force_integer_period) {
         int new_period = int(1.0f / frequency_lp_);
-        if (abs(new_period - period_) > 1) {
+        if (std::abs(new_period - period_) > 1) {
           period_ = new_period;
           frequency_ = 1.0f / float(new_period);
         }
