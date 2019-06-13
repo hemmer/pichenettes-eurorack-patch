@@ -37,6 +37,7 @@
 #include "tides2/ramp_extractor.h"
 
 #include <algorithm>
+#include <cstdlib>
 
 #include "stmlib/dsp/dsp.h"
 
