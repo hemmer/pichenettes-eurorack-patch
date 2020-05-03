@@ -48,6 +48,10 @@ using namespace segment;
 // output is high.
 const int kRetrigDelaySamples = 32;
 
+// S&H delay (for all those sequencers whose CV and GATE outputs are out of
+// sync).
+const size_t kSampleAndHoldDelay = kSampleRate * 2 / 1000;  // 2 milliseconds
+
 void SegmentGenerator::Init() {
   process_fn_ = &SegmentGenerator::ProcessMultiSegment;
   
@@ -85,6 +89,7 @@ void SegmentGenerator::Init() {
 
   ramp_division_quantizer_.Init();
   delay_line_.Init();
+  gate_delay_.Init();
   
   num_segments_ = 0;
 }
@@ -252,10 +257,11 @@ void SegmentGenerator::ProcessSampleAndHold(
   const float coefficient = PortamentoRateToLPCoefficient(
       parameters_[0].secondary);
   ParameterInterpolator primary(&primary_, parameters_[0].primary, size);
-
+  
   while (size--) {
     const float p = primary.Next();
-    if (*gate_flags & GATE_FLAG_RISING) {
+    gate_delay_.Write(*gate_flags);
+    if (gate_delay_.Read(kSampleAndHoldDelay) & GATE_FLAG_RISING) {
       value_ = p;
     }
     active_segment_ = *gate_flags & GATE_FLAG_HIGH ? 0 : 1;
@@ -431,9 +437,9 @@ void SegmentGenerator::ShapeLFO(
   const float phase_shift = plateau_width * 0.25f;
   
   while (size--) {
-    float phase = in_out->phase - phase_shift;
-    if (phase < 0.0f) {
-      phase += 1.0f;
+    float phase = in_out->phase + phase_shift;
+    if (phase > 1.0f) {
+      phase -= 1.0f;
     }
     float triangle = phase < slope
         ? slope_up * phase
