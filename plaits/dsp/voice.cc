@@ -40,8 +40,8 @@ void Voice::Init(BufferAllocator* allocator) {
   engines_.RegisterInstance(&fm_engine_, false, 0.6f, 0.6f);
   engines_.RegisterInstance(&grain_engine_, false, 0.7f, 0.6f);
   engines_.RegisterInstance(&additive_engine_, false, 0.8f, 0.8f);
-  engines_.RegisterInstance(&wavetable_engine_, false, 0.6f, 0.6f);
-  engines_.RegisterInstance(&chord_engine_, false, 0.8f, 0.8f);
+  //engines_.RegisterInstance(&wavetable_engine_, false, 0.6f, 0.6f);  // bad
+  //engines_.RegisterInstance(&chord_engine_, false, 0.8f, 0.8f);       // bad
   engines_.RegisterInstance(&speech_engine_, false, -0.7f, 0.8f);
 
   engines_.RegisterInstance(&swarm_engine_, false, -3.0f, 1.0f);

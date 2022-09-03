@@ -163,7 +163,9 @@ class Voice {
       Frame* frames,
       size_t size);
   inline int active_engine() const { return previous_engine_index_; }
-    
+  
+  inline int GetNumEngines() const{ return engines_.size(); }
+
  private:
   void ComputeDecayParameters(const Patch& settings);
   
@@ -188,10 +190,12 @@ class Voice {
     CONSTRAIN(value, minimum_value, maximum_value);
     return value;
   }
+
+
   
   AdditiveEngine additive_engine_;
   BassDrumEngine bass_drum_engine_;
-  ChordEngine chord_engine_;
+  // ChordEngine chord_engine_;
   FMEngine fm_engine_;
   GrainEngine grain_engine_;
   HiHatEngine hi_hat_engine_;
@@ -204,7 +208,7 @@ class Voice {
   SwarmEngine swarm_engine_;
   VirtualAnalogEngine virtual_analog_engine_;
   WaveshapingEngine waveshaping_engine_;
-  WavetableEngine wavetable_engine_;
+  // WavetableEngine wavetable_engine_;
 
   stmlib::HysteresisQuantizer engine_quantizer_;
   
