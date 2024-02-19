@@ -33,13 +33,13 @@
 
 namespace plaits {
 
-#define LPC_SPEECH_SYNTH_NUM_WORD_BANKS 5
+#define LPC_SPEECH_SYNTH_NUM_WORD_BANKS 4
 
 extern const uint8_t bank_0[1233];
 extern const uint8_t bank_1[900];
 extern const uint8_t bank_2[1552];
 extern const uint8_t bank_3[2524];
-extern const uint8_t bank_4[4802];
+// extern const uint8_t bank_4[4802];
 
 extern LPCSpeechSynthWordBankData word_banks_[LPC_SPEECH_SYNTH_NUM_WORD_BANKS];
 

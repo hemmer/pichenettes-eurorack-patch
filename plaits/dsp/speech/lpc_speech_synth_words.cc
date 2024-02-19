@@ -926,7 +926,8 @@ const uint8_t bank_3[] = {
   0x9d, 0xee, 0xc9, 0x79, 0xe2, 0xe1, 0x1f, 0xf8
 };
 
-/* extern */
+/*
+/ extern 
 const uint8_t bank_4[] = {
   // analog
   0xa7, 0xa8, 0x51, 0xc3, 0x3b, 0xa4, 0x9c, 0xbc,
@@ -1560,6 +1561,7 @@ const uint8_t bank_4[] = {
   0x54, 0x4b, 0x94, 0xe2, 0x3e, 0x3a, 0x1a, 0x00,
   0xe0, 0xff
 };
+*/
 
 /* extern */
 LPCSpeechSynthWordBankData word_banks_[] = {
@@ -1567,7 +1569,7 @@ LPCSpeechSynthWordBankData word_banks_[] = {
   { bank_1, 900 },
   { bank_2, 1552 },
   { bank_3, 2524 },
-  { bank_4, 4802 },
+  // { bank_4, 4802 },
 };
 
 }  // namespace plaits
